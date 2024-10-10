@@ -2,8 +2,18 @@ h1 {
     color:green;background-color: black;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid #000000;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+
 p1 { 
-    font-size: 12px;font-style:arial;
+    font-size: 18px;font-style:arial;
 }
 
 
@@ -29,7 +39,7 @@ h4{
 }
 
 ul1{
-    font-size: 14px;color:rgb(238, 118, 6);font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;color:rgb(238, 118, 6);font-family: Georgia, 'Times New Roman', Times, serif;
       
 }
 
@@ -38,7 +48,7 @@ h5{
 }
 
 ul2{
-    font-size: 13px;color:rgb(11, 142, 152);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;color:rgb(11, 142, 152);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h6{
@@ -52,4 +62,106 @@ l:hover {
     background-color: yellow;
   }
 
+  .image-container {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
 
+.image-container img {
+    width: 200px; 
+    height: auto;
+}
+
+.enlarged {
+    transform: scale(2);
+    z-index: 10;
+    position: relative;
+}
+
+.navbar ul{
+    list-style-type:none;
+    background-color:rgb(0, 0, 0);
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+
+
+}
+.navbar a{
+    color:#f9f9f9;
+    text-decoration:none;
+    padding:15px;
+    display:block;
+    text-align:center;
+
+}
+
+.navbar li{
+    float:left;
+}
+
+.navbar a:hover {
+    color:rgb(7, 7, 7)
+}
+
+.myimage.jpeg{
+    display:block;
+    margin:auto
+}
+
+.center{
+    display:block;
+    margin-left: 550px;
+    margin: right auto;
+    width: 50%
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: rgb(255, 255, 255);
+  }
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(245, 242, 242);
+    padding: 14px 16px;
+    background-color: black;
+    font-family: inherit;
+    margin: 0;
+    display:inline-block;
+    vertical-align: middle;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f8f5f5;
+  }
+  
+  .show {
+    display: block;
+  }
