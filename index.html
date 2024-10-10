@@ -2,46 +2,123 @@
 <html>
 <head>
 <title>ITM780 Lab 2</title>
+<link rel="stylesheet" href="styles.css">
+<style type = "text/css">
+    .myDiv {
+      border: 5px outset red;
+      background-color: rgb(0, 0, 0);    
+      text-align: center;
+    }
+    .myDivs {
+      border: 3px outset rgb(102, 2, 201);
+      background-color: rgb(219, 191, 51);    
+      text-align: left;
+    }
+      .divss{
+        font-family:cursive;
+        }
+    .divi{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }    
+    table, th, td {
+  border:1px solid black;
+}
+div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 100px;
+  margin-left: 50px;
+  background-color: lightblue;
+}
+
+    </style>
 </head>
 <body>
 
-<h1>My Education - Dinosan Karunakaran</h1>
-<br>
+<h1> <div class="myDiv", id="Home">
+    My Education - Dinosan Karunakaran
+  </div></h1>
+  <button id="nameButton">Enter Your Name</button>
+    <p id="displayName"></p>
+    <script src="main.js"></script>
+  <header>
+  <nav class="navbar">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Schools">Schools</a></li>
+        <li><a href="#My Links">My Links</a></li>
+          <li class="dropdown">
+          <a class="dropbtn" onclick="myFunction()">Pages
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="https://www.linkedin.com/in/dinosan-karunakaran-74221a266">My LinkedIn</a>
+            <a href="https://www.torontomu.ca/?gad_source=1&gclid=EAIaIQobChMInfm_mpbciAMV3Hd_AB1KSzdOEAAYASAAEgKS7fD_BwE">My School</a>
+          </div>
+          </div> 
+        </div>
+      </ul>
+      </nav>
+    </header>
+    <div class="image-container" onclick="toggleImage(this)">
+      <img src="file:///Users/dino.17/Desktop/css%20lab/myimage.jpeg" alt="My Image" height="200" width="100" class="center" >
+  </div>
+
+  
 <hr>
-<h1>Schools</h1>
+<h2>Schools</h2>
+<div1 id="Schools"> </div1>
 <ol>
+    <div class="myDivs">
     <li>Mary Shadd Public School - 2008-2018</li>
     <li>Lester B.Pearson Collegiate Institute - 2018-2022</li>
     <li>Toronto Metropolitan University - 2022-present</li>
+</div>
 </ol>
-<br>
+
 <hr>
 
-<h1>My Program/Courses</h1>
-<p>The program I am enrolled in is Business Technology Management.This program is about analyzing different business needs using appropriate technology based processes and learn how to communicate these effectively.</p>
-<p>A course I found useful in this program was ITM200 because it was an introductory course to python which is an important coding language and a great skill to know for many business related jobs. I believe learning python is beneficial and could help appeal to companies who see that you can code in this language as well.</p>
-<br>
+<h3>My Program/Courses</h3>
+<p1>The program I am enrolled in is Business Technology Management.This program is about analyzing different business needs using appropriate technology based processes and learn how to communicate these effectively.</p1>
+<p1>A course I found useful in this program was ITM200 because it was an introductory course to python which is an important coding language and a great skill to know for many business related jobs. I believe learning python is beneficial and could help appeal to companies who see that you can code in this language as well.</p1>
+
 <hr>
 
-<h1>Educational Awards</h1>
-<ul>
+<h4>Educational Awards</h4>
+<ul1>
+    <div2 class="div">
     <li>Honours - Grade 9,10,11,12</li>
     <li>Communications Award</li>
-</ul>
-<br>
+</div2>
+</ul1>
+
 <hr>
 
-<h1>Extra Curriculur Activities</h1>
-<ul>
+<h5>Extra Curriculur Activities</h5>
+<ul2>
     <li>Basketball - Grade 10,12</li>
     <li>TMU - Power of Excel Bootcamp</li>
     <li>TMU - SQl 2.0 Bootcamp</li>
-</ul>
-<br>
+</ul2>
 <hr>
 
-<h1>My LinkedIn</h1>
-<p><a href="https://www.linkedin.com/in/dinosan-karunakaran-74221a266">Check out my LinkedIn page!</a></p>
+<h6>My Links</h6>
+<div1 id="My Links"> </div1>
 
+<table style="width:100%">
+    <tr>
+        
+      <td><div class = "divss"> <a href="https://www.linkedin.com/in/dinosan-karunakaran-74221a266">Check out my LinkedIn page!</a> </div> </td>
+      <td>LinkedIn</td>
+      
+    </tr>
+    <tr>
+      <td><div class="divi"><l href="https://www.torontomu.ca/?gad_source=1&gclid=EAIaIQobChMInfm_mpbciAMV3Hd_AB1KSzdOEAAYASAAEgKS7fD_BwE">Check out my school page!</l></div></td>
+      <td>TMU Page</td>
+    </tr>
+
+  </table>
+  
 </body>
 </html>
+
