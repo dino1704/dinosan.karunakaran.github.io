@@ -56,9 +56,9 @@ h6{
 }
 
 a:visited {
-    color: green;
+    color: rgb(2, 17, 220);
 }
-l:hover {
+a:hover {
     background-color: yellow;
   }
 
@@ -198,5 +198,5 @@ button {
 }
 
 button[type="reset"] {
-    background-color: #dc3545;
+    background-color: #2000d8;
 }
