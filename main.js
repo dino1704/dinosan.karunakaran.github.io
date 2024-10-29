@@ -35,10 +35,9 @@ function myFunction() {
     const email = document.getElementById('email').value;
     const comments = document.getElementById('comments').value;
     const satisfaction = document.querySelector('input[name="satisfaction"]:checked').value;
-    const subscribe = document.querySelector('input[name="subscribe"]').checked;
-    const country = document.getElementById('country').value;
+    const rating = document.getElementById('rating').value;
     const date = document.getElementById('date').value;
-    const age = document.getElementById('age').value;
+    const employment = document.getElementById('Employment Status').value;
 
     // Creating an object to store form data
     const formData = {
@@ -46,10 +45,9 @@ function myFunction() {
         email,
         comments,
         satisfaction,
-        subscribe,
-        country,
+        rating,
         date,
-        age,
+        employment,
     };
 
     // Saving the form data object in local storage
