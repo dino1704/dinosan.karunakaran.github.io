@@ -21,13 +21,6 @@
     table, th, td {
   border:1px solid black;
 }
-div {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 100px;
-  margin-left: 50px;
-  background-color: lightblue;
-}
 
     </style>
 </head>
@@ -170,7 +163,38 @@ div {
 <script src="local.js"></script>
 </body>
 </html>
+
+<button onclick="increaseTextSize()">Enlarge Text</button>
+
+<script>
+function increaseTextSize() {
+    document.body.style.fontSize = "larger"; 
+}
+</script>
+
+<button onclick="toggleColors()">Toggle Colors</button>
+
+<script>
+function toggleColors() {
+    const body = document.body;
+    if (body.style.backgroundColor === "white") {
+        body.style.backgroundColor = "grey"; // High contrast background
+        body.style.color = "#00000"; // High contrast text
+    } else {
+        body.style.backgroundColor = "white";
+        body.style.color = "blue";
+    }
+}
+</script>
   
+<hr>
+<br>
+
+<figure>
+  <iframe src="YOUR_AUDIO_FILE_URL" title="Audio description" controls></iframe>
+  <figcaption>Figure 1. Description of audio file. [If from a source: Source in APA format]</figcaption>
+</figure>
+
 </body>
 </html>
 
