@@ -28,3 +28,15 @@ function myFunction() {
       }
     }
   }
+
+  
+function toggleColors() {
+    const body = document.body;
+    if (body.style.backgroundColor === "blue") {
+        body.style.backgroundColor = "white"; // High contrast background
+        body.style.color = "orange"; // High contrast text
+    } else {
+        body.style.backgroundColor = "red";
+        body.style.color = "blue";
+    }
+}
