@@ -6,7 +6,7 @@
 <style type = "text/css">
     .myDiv {
       border: 5px outset rgb(6, 6, 6);
-      background-color: rgb(0, 0, 0);    
+      background-color:rgb(139, 164, 172);    
       text-align: center;
     }
     .myDivs {  
@@ -22,12 +22,19 @@
   border:1px solid black;
 }
 
+
     </style>
 </head>
 <body>
 
+<!--Button to increase text size-->
+<button onclick="increaseTextSize()">Enlarge Text</button>
+
+<!--Button to Change colours-->
+<button onclick="toggleColors()">Toggle Colors</button>
+
 <h1> <div class="myDiv", id="Home">
-    My Education - Dinosan Karunakaran
+    Welcome to my Website! - Dinosan Karunakaran
   </div></h1>
   <button id="nameButton">Enter Your Name</button>
     <p id="displayName"></p>
@@ -51,8 +58,8 @@
       </ul>
       </nav>
     </header>
-    <div class="image-container" onclick="toggleImage(this)">
-      <img src="myimage.jpeg" alt="Dino" height="200" width="100" class="center" >
+    <div class="image-gallery" onclick="toggleImage(this)">
+      <img id="myimage" src="myimage.jpeg" alt="Dino" height="200" width="100" class="center" >
   </div>
 
   
@@ -163,24 +170,51 @@
 <script src="local.js"></script>
 </body>
 </html>
-
-<button onclick="increaseTextSize()">Enlarge Text</button>
-
-<script>
-function increaseTextSize() {
-    document.body.style.fontSize = "larger"; 
-}
-</script>
-
-<button onclick="toggleColors()">Toggle Colors</button>
   
 <hr>
 <br>
 
-<figure>
-  <iframe src="YOUR_AUDIO_FILE_URL" title="Audio description" controls></iframe>
-  <figcaption>Figure 1. Description of audio file. [If from a source: Source in APA format]</figcaption>
-</figure>
+<article>
+  <!-- Use Iframe to embed a video-->
+  <video id="video1" width="400" height="250" controls>
+    <source src="video1.MP4" type="video/mp4">
+  </video>
+</article>
+
+<!--Create buttons for play/pause-->
+<section class="video1">
+  <button onclick="playPause()">Play/Pause</button>
+  <p><button onclick="makeBig()">Big</button></p>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+</section>
+
+<hr>
+<br>
+
+<!--All images with descriptions and alt descriptions-->
+<div class="image-container">
+  <div class="image-item">
+  <img id="image1" src="Image1.jpg" alt="Beach area of a resort in Mexico that I went to on August 16 2024">
+  <p>Taken on August 16, 2024, Location: Cancun, Mexico</p>
+  <button onclick="showAltText('image1')">Show Alt Text</button>
+</div>
+<div class="image-item">
+  <img id="image2" src="Image2.JPG" alt="Arial view from a ferris wheel at CNE that I went to on September 1st, 2024">
+  <p>Taken on September 1, 2024, Location: Toronto, ON</p>
+  <button onclick="showAltText('image2')">Show Alt Text</button>
+</div>
+<div class="image-item">
+  <img id="image3" src="Image3.JPG" alt=" I went to a Raptors game at Scotiabank Arena on October 25, 2024">
+  <p>Taken on October 25, 2024, Location: Toronto, ON</p>
+  <button onclick="showAltText('image3')">Show Alt Text</button>
+
+</div>
+</div>
+
+
+
+
 
 </body>
 </html>

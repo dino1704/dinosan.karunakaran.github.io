@@ -1,5 +1,5 @@
 h1 {
-    color:rgb(251, 251, 251);background-color: rgb(14, 14, 14);
+    color:rgb(7, 7, 7);background-color:rgb(139, 164, 172);
 }
 
 hr {
@@ -62,15 +62,31 @@ a:hover {
     background-color: yellow;
   }
 
-  .image-container {
+  .image-gallery {
     display: inline-block;
     cursor: pointer;
     transition: transform 0.2s;
 }
 
-.image-container img {
-    width: 200px; 
+.image-gallery {
+    width: auto; 
     height: auto;
+}
+
+#myimage {
+    max-width: 50%;  /* Decreased from 25% */
+    height: 500px;
+    width: auto;
+    border: 5px solid #060606;  
+    border-radius: 8px;  /* Rounded corners */
+    transition: all 0.3s ease;  /* Smooth transition for dark mode */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);  /* Subtle shadow */
+}
+
+/* Hover effect (optional) */
+#myimage:hover {
+    transform: scale(1.02);  /* Slight zoom on hover */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
 .enlarged {
@@ -198,5 +214,45 @@ button {
 }
 
 button[type="reset"] {
-    background-color: #2000d8;
+    background-color: #040404;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center; /* centers the images horizontally */
+    gap: 10px; /* adds space between the images */
+  }
+  
+  .image-container img {
+    width: 400px; 
+    height: auto;
+    border-radius: 8px; 
+  }
+  
+  .image-item {
+    text-align: center;
+  }
+  
+  .image-item img {
+    width: 300px; 
+    height: auto;
+    border-radius: 8px; 
+  }
+  
+  .image-item  {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  #content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+  }
+  
+  /* Alternate Accessible Colors */
+  .accessible-colors {
+    background-color: #f5f5dc; /* Light yellow-beige background */
+    color: #00008b; /* Dark blue text */
+  }
