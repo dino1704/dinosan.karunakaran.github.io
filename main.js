@@ -1,80 +1,55 @@
-const nameButton = document.getElementById('nameButton');
-const displayName = document.getElementById('displayName');
+document.getElementById('nameButton').addEventListener('click', function() {
+  const userName = prompt("Please enter your name:");
+  if (userName) {
+    const greetingMessage = document.getElementById('greetingMessage');
+    greetingMessage.style.display = 'block'; // Show the greeting message
+    greetingMessage.textContent = `Hi ${userName}, welcome to my website!`; // Set the text
+  }
+});
 
-nameButton.addEventListener('click', () => {
-    const name = prompt("Please enter your name:");
-    if (name) {
-        displayName.textContent = `Hello, ${name}! Welcome to the site.`;
-    } else {
-        displayName.textContent = "You didn't enter a name.";
-    }
-})
 
-function toggleImage(container) {
-    const img = container.querySelector('img');
-    img.classList.toggle('enlarged');
+// Function to change colour
+function toggleColors() {
+  const elements = document.querySelectorAll('.effect');
+  console.log(elements); 
+  
+  elements.forEach((element) => {
+    element.style.color = 'green'; 
+  });
 }
 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+
+
+// Reset Colors Function
+function resetColour() {
+  const elements = document.querySelectorAll(".effect");
   
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-    }
-  }
+  elements.forEach(function (element) {
+    element.style.color = ''; // Reset text color
+  });
 
- //Toggle text colours for better accessibility 
- let isAccessibleScheme = false;
+  document.body.style.backgroundColor = ''; // Reset background color
+}
 
- function toggleColors() {
-   const body = document.body;
+// Increase Text Size Function
+function increaseTextSize() {
+  const elements = document.querySelectorAll(".effect");
 
-   // Define accessible and default colors
-   const accessibleBackgroundColor = "#f0f0e4";
-   const accessibleTextColor = "#003366";
-   const defaultBackgroundColor = "rgb(139, 164, 172)";
-   const defaultTextColor = "black";
+  elements.forEach(function (element) {
+    const currentSize = window.getComputedStyle(element).fontSize;
+    element.style.fontSize = (parseFloat(currentSize) + 2) + 'px'; // Increase font size
+  });
+}
 
-   if (!isAccessibleScheme) {
-     // Apply accessible colors to the body background and all text elements
-     body.style.backgroundColor = accessibleBackgroundColor;
-     document.querySelectorAll("h1, h2, h3,h4,h5,h6,ol,ul1,ul, p, span, div,nav,p1,navbar").forEach(element => {
-       element.style.color = accessibleTextColor;
-     });
-   } else {
-     // Revert to default colors
-     body.style.backgroundColor = defaultBackgroundColor;
-     document.querySelectorAll("h1, h2, h3,h4,h5,h6,ol,ul,ul1, p, span, div,nav,p1,navbar").forEach(element => {
-       element.style.color = defaultTextColor;
-     });
-   }
+// Decrease Text Size Function
+function decreaseTextSize() {
+  const elements = document.querySelectorAll(".effect");
 
-   isAccessibleScheme = !isAccessibleScheme;
- }
-
-//Increase text size for visibility
-let isTextEnlarged = false;
-
-  function increaseTextSize() {
-    const body = document.body;
-
-    if (!isTextEnlarged) {
-      // Apply enlarged font size
-      body.style.fontSize = "30px"; 
-    } else {
-      // Revert to default font size
-      body.style.fontSize = "18px"; 
-    }
-
-    // Toggle the enlargement state
-    isTextEnlarged = !isTextEnlarged;
-  }
+  elements.forEach(function (element) {
+    const currentSize = window.getComputedStyle(element).fontSize;
+    element.style.fontSize = (parseFloat(currentSize) - 2) + 'px'; // Decrease font size
+  });
+}
 
 
   // Function to display alt text 
@@ -94,33 +69,34 @@ function showAltText(elementId) {
   }
 
   //Making the buttons work for the video
-  window.onload = function(){myVideo=document.getElementById("video1");}
+  const video = document.getElementById("video1");
   
   function playPause()
   {
-      if (myVideo.paused)
+      if (video1.paused)
       {
-          myVideo.play();
+          video1.play();
       } else
       {
-          myVideo.pause();
+          video1.pause();
       }
   }
  
   function makeBig() 
   {
-      myVideo.width = 600;
-      myVideo.height = 500;
+      video1.width = 600;
+      video1.height = 500;
   }
 
   function makeSmall() 
   {
-      myVideo.width = 320;
-      myVideo.height = 100;
+      video1.width = 320;
+      video1.height = 100;
   }
 
   function makeNormal() 
   {
-      myVideo.width = 420;
-      myVideo.height = 250;
+      video1.width = 420;
+      video1.height = 250;
   }
+

@@ -1,0 +1,87 @@
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .myDiv {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="My Experiences.html">Experiences</a></li>
+        <li><a href="Seo.html">SEO and SMO</a></li>
+        <li><a href="Contact.html">Feedback</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+        <li class="dropdown">
+          <a href="#">Pages</a>
+          <div class="dropdown-content">
+            <a href="https://www.linkedin.com/in/dinosan-karunakaran-74221a266">My LinkedIn</a>
+            <a href="https://www.torontomu.ca/">My School</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+<section id="form-section">
+    <h2>Feedback Form</h2>
+    <!-- Feedback Form with various input elements -->
+    <form id="feedbackForm">
+        <!-- Text Field (Single-line) for Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <!-- Multiple Text Field for Comments -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" required></textarea>
+  
+        <!-- Radio Buttons for Satisfaction Rating -->
+        <label>How satisfied are you with the website design?</label>
+        <input type="radio" name="satisfaction" value="Very satisfied" required> Very satisfied
+        <input type="radio" name="satisfaction" value="Satisfied" required> Satisfied
+        <input type="radio" name="satisfaction" value="Neutral" required> Neutral
+        <input type="radio" name="satisfaction" value="Dissatisfied" required> Dissatisfied
+  
+  
+        <!-- Dropdown for Rating of the Website -->
+        <label for="rating">Rating:</label>
+        <select id="rating" name="Rating" required>
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Needs Improvement">Needs Improvement</option>
+        </select>
+  
+        <!-- Date Picker for Feedback Date -->
+        <label for="date">Date of Feedback:</label>
+        <input type="date" id="date" name="date" required>
+  
+        <!-- Field for Employment Status -->
+        <label for="Employment Status">Employment Status:</label>
+        <input type="text" id="Employment Status" name="Employement Status" required>
+  
+        <!-- Submit and Clear Buttons -->
+        <button type="button" onclick="submitForm()">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+  </section>
+  
+  <script src="main.js"></script>
+  <script src="local.js"></script>
+
+
+  
+  </body>
+  </html>

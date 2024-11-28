@@ -1,0 +1,73 @@
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .myDiv {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="My Experiences.html">Experiences</a></li>
+        <li><a href="Seo.html">SEO and SMO</a></li>
+        <li><a href="Contact.html">Feedback</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+        <li class="dropdown">
+          <a href="#">Pages</a>
+          <div class="dropdown-content">
+            <a href="https://www.linkedin.com/in/dinosan-karunakaran-74221a266">My LinkedIn</a>
+            <a href="https://www.torontomu.ca/">My School</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+ <hr>
+ <br>
+ <script src="main.js"></script>
+ <article>
+   <!-- Use Iframe to embed a video-->
+   <video id="video1" width="400" height="250" controls>
+     <source src="video1.MP4" type="video/mp4">
+   </video>
+ </article>
+ 
+ <!--Create buttons for play/pause-->
+ <section class="video2">
+   <button onclick="playPause()">Play/Pause</button>
+   <button onclick="makeBig()">Big</button>
+   <button onclick="makeSmall()">Small</button>
+   <button onclick="makeNormal()">Normal</button>
+ </section>
+
+ <hr>
+ <br>
+ 
+ <!--All images with descriptions and alt descriptions-->
+ <div class="image-container">
+   <div class="image-item">
+   <img id="image1" src="Image1.jpg" alt="Beach area of a resort in Mexico that I went to on August 16 2024">
+   <p>Taken on August 16, 2024, Location: Cancun, Mexico</p>
+   <button onclick="showAltText('image1')">Show Alt Text</button>
+ </div>
+ <div class="image-item">
+   <img id="image2" src="Image2.JPG" alt="Arial view from a ferris wheel at CNE that I went to on September 1st, 2024">
+   <p>Taken on September 1, 2024, Location: Toronto, ON</p>
+   <button onclick="showAltText('image2')">Show Alt Text</button>
+ </div>
+ <div class="image-item">
+   <img id="image3" src="Image3.JPG" alt=" I went to a Raptors game at Scotiabank Arena on October 25, 2024">
+   <p>Taken on October 25, 2024, Location: Toronto, ON</p>
+   <button onclick="showAltText('image3')">Show Alt Text</button>
+ 
+ </div>
+ </div>
+ 

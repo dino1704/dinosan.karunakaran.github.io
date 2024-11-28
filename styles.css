@@ -1,65 +1,67 @@
 h1 {
-    color:rgb(7, 7, 7);background-color:rgb(139, 164, 172);
+    color:rgb(19, 18, 18);
+    text-align: center;
 }
 
 hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 4px solid #000000;
+    border-top: 4px solid #0d0c0c;
     margin: 1em 0;
     padding: 0;
   }
 
 
 p1 { 
-    font-size: 18px;font-style:arial;
+    font-size: 18px;font-style:arial;color:rgb(5, 4, 4)
 }
 
 
 h2{
-    font-style:italic;color:rgb(14, 14, 15);font-size:25px;
+    font-style:italic;color:rgb(3, 3, 3);font-size:25px;
 }
 
 ol{
-    font-style:oblique;color:rgb(0, 0, 0);
+    font-style:oblique;color:rgb(1, 1, 1);
 }
 
 h3{
-    font-size: 18px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:rgb(6, 6, 6);
+    font-size: 18px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:rgb(4, 4, 4);
 }
 
 body{
-    background-color: rgb(139, 164, 172);
+    background-color: rgb(216, 218, 218);
+    margin-bottom: 100px;
 }
 
 h4{
-    font-size: 18px;color:rgb(11, 11, 11);
+    font-size: 18px;color:rgb(15, 14, 14);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 ul1{
-    font-size: 18px;color:rgb(0, 0, 0);font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;color:rgb(3, 3, 3);font-family: Georgia, 'Times New Roman', Times, serif;
       
 }
 
 h5{
-    font-size:13px;color:rgb(10, 10, 11);font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:13px;color:rgb(11, 11, 12);font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul2{
-    font-size: 18px;color:rgb(0, 0, 0);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;color:rgb(16, 15, 15);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h6{
-    font-size:15px;color:rgb(0, 0, 0);font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:15px;color:rgb(5, 5, 5);font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 a:visited {
-    color: rgb(2, 17, 220);
+    color: rgb(12, 12, 13);
 }
 a:hover {
-    background-color: yellow;
+    background-color: rgb(248, 245, 245);
   }
 
   .image-gallery {
@@ -81,6 +83,7 @@ a:hover {
     border-radius: 8px;  /* Rounded corners */
     transition: all 0.3s ease;  /* Smooth transition for dark mode */
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);  /* Subtle shadow */
+    margin-top: 3%;
 }
 
 /* Hover effect (optional) */
@@ -95,89 +98,96 @@ a:hover {
     position: relative;
 }
 
-.navbar ul{
-    list-style-type:none;
-    background-color:rgb(0, 0, 0);
-    padding:0px;
-    margin:0px;
-    overflow:hidden;
-
-
-}
-.navbar a{
-    color:#f9f9f9;
-    text-decoration:none;
-    padding:15px;
-    display:block;
-    text-align:center;
-
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%; /* Full width for the header */
+  background-color: black; /* Navbar background */
+  padding: 10px 5%; /* Adjust padding for consistent spacing */
+  margin: 0; /* Remove negative margins */
+  justify-content: center; /* Center the navbar */
+  align-items: center; /* Center vertically */
+  border-radius: 20px; /* Add rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
 }
 
-.navbar li{
-    float:left;
+.navbar ul {
+  display: flex; /* Ensures items align side by side */
+  gap: 30px; /* Adds spacing between items */
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Removes default bullet points */
+}
+
+.navbar li {
+  margin: 0 15px; /* Horizontal spacing between items */
+}
+
+.navbar a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 10px 15px; /* Increase hoverable area */
+  text-align: center;
 }
 
 .navbar a:hover {
-    color:rgb(7, 7, 7)
+  color: rgb(6, 6, 6); /* Change text color on hover */
+  background-color: #f9f9f9; /* Optional: Add background for better visibility */
+  border-radius: 5px; /* Optional: Rounded corners for hover effect */
 }
+
+
+
+
 
 .myimage.jpeg{
     display:block;
-    margin:auto
+    margin-top: -100px;
 }
 
 .center{
     display:block;
     margin-left: 550px;
     margin: right auto;
-    width: 50%
+    width: 50%;
+    margin-top: -30px;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+.navbar a:hover, .dropdown:hover {
     background-color: rgb(255, 255, 255);
   }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
+  .dropdown {
+    position: relative;
   }
-  
-  .dropdown .dropbtn {
-    cursor: pointer;
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: rgb(245, 242, 242);
-    padding: 14px 16px;
-    background-color: black;
-    font-family: inherit;
-    margin: 0;
-    display:inline-block;
-    vertical-align: middle;
-  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
 
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 100%; /* Ensure dropdown aligns properly */
+    background-color: gray;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(83, 104, 239, 0.716);
     z-index: 1;
   }
   
   .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
+    color: rgb(255, 255, 255);
+    padding: 10px 14px;
     text-decoration: none;
     display: block;
-    text-align: left;
   }
   
-  .dropdown-content a:hover {
-    background-color: #f8f5f5;
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
-  
   .show {
     display: block;
   }
@@ -185,10 +195,9 @@ a:hover {
   #form-section {
     max-width: 600px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: rgb(216, 218, 218);
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
+   
 }
 
 label {
@@ -205,12 +214,26 @@ input, textarea, select, button {
 }
 
 button {
-    width: 48%;
+    width: 30%;
     margin-top: 15px;
     background-color: #0c0c0c;
     color: white;
     border: none;
     cursor: pointer;
+    padding: 10px 15px; /* Adjust padding for size */
+    font-size: 16px; /* Make the text more readable */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+button:hover {
+  background-color: #333333; /* Slightly lighter color on hover */
+  color: #ffffff; /* Keep text color visible */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+button:active {
+  background-color: #1a1a1a; /* Darker shade when pressed */
+  transform: scale(0.98); /* Slightly reduce size for a pressed effect */
 }
 
 button[type="reset"] {
@@ -232,6 +255,10 @@ button[type="reset"] {
   .image-item {
     text-align: center;
   }
+
+  p{
+    color: white;
+  }
   
   .image-item img {
     width: 300px; 
@@ -247,12 +274,132 @@ button[type="reset"] {
   
   #content {
     background-color: white;
-    color: black;
+    color: rgb(13, 12, 12);
     padding: 20px;
   }
   
-  /* Alternate Accessible Colors */
-  .accessible-colors {
-    background-color: #f5f5dc; /* Light yellow-beige background */
-    color: #00008b; /* Dark blue text */
+
+
+.reference li {
+  color: rgb(11, 10, 10);
+  background:none;
+  font-size: 15px;
+}
+
+.reference a{
+  color:black;
+}
+
+.reference a:hover{
+  color:black;
+}
+
+p{
+  color:black;
+}
+
+.video2 {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  
+}
+
+.video2 button {
+  height: 40px;
+  width:110px;
+}
+
+video {
+  margin: 0; /* Remove default body margins */
+  height: 75vh; /* Full viewport height */
+  border: 2px solid black; /* Optional border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  margin-left: 36%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:25px;
+}
+
+
+.Animations{
+  display:inline-block;
+  text-align:center;
+  
+}
+
+.text{
+
+  font-size: 2em;
+  letter-spacing: 4px;
+  font-family: cursive;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  text-align:center;
+  overflow: hidden;
+  animation: 
+  typing 2s steps(18),
+  cursor .4s step-end infinite alternate;
+  color:rgb(12, 12, 11);
+  margin-top: -100px;
+  margin-left:0px;
+}
+
+
+/*Cursor Blinking*/
+@keyframes cursor{
+  50%{border-color: transparent}
+}
+/*Cursor Blinking*/
+@keyframes typing{
+  from{width:0}
+}
+
+   /* Button Styles */
+   #nameButton {
+    font-size: 16px;
+    padding: 20px 130px;
+    background-color: #090909;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position:relative;
+    top: -500px;
+    display:inline-block;
+    text-align: center;
+    white-space: nowrap;
   }
+
+  #nameButton:hover {
+    background-color: #bbbbbb;
+  }
+
+  /* Greeting Message Styles */
+  .greeting-message {
+    font-size: 2em;
+    font-family: cursive;
+    color: #2f4f4f;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #2f4f4f;
+    width: 0; /* Hidden initially */
+    animation: typing 4s steps(30, end), blink 0.5s step-end infinite;
+    position:relative;
+    top: -480px;
+  }
+
+  /* Typing animation */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  

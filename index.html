@@ -3,219 +3,75 @@
 <head>
 <title>ITM780 Lab 2</title>
 <link rel="stylesheet" href="styles.css">
-<style type = "text/css">
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
     .myDiv {
-      border: 5px outset rgb(6, 6, 6);
-      background-color:rgb(139, 164, 172);    
       text-align: center;
     }
-    .myDivs {  
-      text-align: left;
-    }
-      .divss{
-        font-family:cursive;
-        }
-    .divi{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }    
-    table, th, td {
-  border:1px solid black;
-}
-
-
-    </style>
+  </style>
 </head>
 <body>
-
-<!--Button to increase text size-->
-<button onclick="increaseTextSize()">Enlarge Text</button>
-
-<!--Button to Change colours-->
-<button onclick="toggleColors()">Toggle Colors</button>
-
-<h1> <div class="myDiv", id="Home">
-    Welcome to my Website! - Dinosan Karunakaran
-  </div></h1>
-  <button id="nameButton">Enter Your Name</button>
-    <p id="displayName"></p>
-    <script src="main.js"></script>
   <header>
-  <nav class="navbar">
+    <nav class="navbar">
       <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Schools">Schools</a></li>
-        <li><a href="#My Links">My Links</a></li>
-          <li class="dropdown">
-          <a class="dropbtn" onclick="myFunction()">Pages
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content" id="myDropdown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="My Experiences.html">Experiences</a></li>
+        <li><a href="Seo.html">SEO and SMO</a></li>
+        <li><a href="Contact.html">Feedback</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+        <li class="dropdown">
+          <a href="#">Pages</a>
+          <div class="dropdown-content">
             <a href="https://www.linkedin.com/in/dinosan-karunakaran-74221a266">My LinkedIn</a>
-            <a href="https://www.torontomu.ca/?gad_source=1&gclid=EAIaIQobChMInfm_mpbciAMV3Hd_AB1KSzdOEAAYASAAEgKS7fD_BwE">My School</a>
+            <a href="https://www.torontomu.ca/">My School</a>
           </div>
-          </div> 
-        </div>
+        </li>
       </ul>
-      </nav>
-    </header>
-    <div class="image-gallery" onclick="toggleImage(this)">
-      <img id="myimage" src="myimage.jpeg" alt="Dino" height="200" width="100" class="center" >
-  </div>
-
-  
-<hr>
-<h2>Schools</h2>
-<div1 id="Schools"> </div1>
-<ol>
-    <div class="myDivs">
-    <li>Mary Shadd Public School - 2008-2018</li>
-    <li>Lester B.Pearson Collegiate Institute - 2018-2022</li>
-    <li>Toronto Metropolitan University - 2022-present</li>
-</div>
-</ol>
-
-<hr>
-
-<h3>My Program/Courses</h3>
-<p1>The program I am enrolled in is Business Technology Management.This program is about analyzing different business needs using appropriate technology based processes and learn how to communicate these effectively.</p1>
-<p1>A course I found useful in this program was ITM200 because it was an introductory course to python which is an important coding language and a great skill to know for many business related jobs. I believe learning python is beneficial and could help appeal to companies who see that you can code in this language as well.</p1>
-
-<hr>
-
-<h4>Educational Awards</h4>
-<ul1>
-    <div2 class="div">
-    <li>Honours - Grade 9,10,11,12</li>
-    <li>Communications Award</li>
-</div2>
-</ul1>
-
-<hr>
-
-<h5>Extra Curriculur Activities</h5>
-<ul2>
-    <li>Basketball - Grade 10,12</li>
-    <li>TMU - Power of Excel Bootcamp</li>
-    <li>TMU - SQl 2.0 Bootcamp</li>
-</ul2>
-<hr>
-
-<h6>My Links</h6>
-<div1 id="My Links"> </div1>
-
-<table style="width:100%">
-    <tr>
-        
-      <td><div class = "divss"> <a href="https://www.linkedin.com/in/dinosan-karunakaran-74221a266">Check out my LinkedIn page!</a> </div> </td>
-      <td>LinkedIn</td>
+    </nav>
+  </header>
+  <script src="main.js"></script>
+  <div class="image-gallery" onclick="toggleImage(this)">
+      <img id="myimage" src="myimage.jpg" alt="Dino" height="10" width="100" class="center" >
+    </div>
+    <div class="container">
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animated Greeting</title>
+      </head>
+      <body>
+        <div id="container" style="text-align: center; margin-top: 100px;">
+          <button id="nameButton">Enter Your Name</button>
+          <div class="greeting-message" id="greetingMessage" style="display: none;"></div>
+        </div>
       
-    </tr>
-    <tr>
-      <td><div class="divi"><a href="https://www.torontomu.ca/?gad_source=1&gclid=EAIaIQobChMInfm_mpbciAMV3Hd_AB1KSzdOEAAYASAAEgKS7fD_BwE">Check out my school page!</a></div></td>
-      <td>TMU Page</td>
-    </tr>
-
-  </table>
-<hr>
-<br>
-
-<section id="form-section">
-  <h2>Feedback Form</h2>
-  <!-- Feedback Form with various input elements -->
-  <form id="feedbackForm">
-      <!-- Text Field (Single-line) for Name -->
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <!-- Email Field -->
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <!-- Multiple Text Field for Comments -->
-      <label for="comments">Comments:</label>
-      <textarea id="comments" name="comments" required></textarea>
-
-      <!-- Radio Buttons for Satisfaction Rating -->
-      <label>How satisfied are you with the website design?</label>
-      <input type="radio" name="satisfaction" value="Very satisfied" required> Very satisfied
-      <input type="radio" name="satisfaction" value="Satisfied" required> Satisfied
-      <input type="radio" name="satisfaction" value="Neutral" required> Neutral
-      <input type="radio" name="satisfaction" value="Dissatisfied" required> Dissatisfied
-
-
-      <!-- Dropdown for Rating of the Website -->
-      <label for="rating">Rating:</label>
-      <select id="rating" name="Rating" required>
-          <option value="Excellent">Excellent</option>
-          <option value="Good">Good</option>
-          <option value="Neutral">Neutral</option>
-          <option value="Needs Improvement">Needs Improvement</option>
-      </select>
-
-      <!-- Date Picker for Feedback Date -->
-      <label for="date">Date of Feedback:</label>
-      <input type="date" id="date" name="date" required>
-
-      <!-- Field for Employment Status -->
-      <label for="Employment Status">Employment Status:</label>
-      <input type="text" id="Employment Status" name="Employement Status" required>
-
-      <!-- Submit and Clear Buttons -->
-      <button type="button" onclick="submitForm()">Submit</button>
-      <button type="reset">Clear</button>
-  </form>
-</section>
-
-<script src="main.js"></script>
-<script src="local.js"></script>
-</body>
-</html>
-  
-<hr>
-<br>
-
-<article>
-  <!-- Use Iframe to embed a video-->
-  <video id="video1" width="400" height="250" controls>
-    <source src="video1.MP4" type="video/mp4">
-  </video>
-</article>
-
-<!--Create buttons for play/pause-->
-<section class="video1">
-  <button onclick="playPause()">Play/Pause</button>
-  <p><button onclick="makeBig()">Big</button></p>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-</section>
-
-<hr>
-<br>
-
-<!--All images with descriptions and alt descriptions-->
-<div class="image-container">
-  <div class="image-item">
-  <img id="image1" src="Image1.jpg" alt="Beach area of a resort in Mexico that I went to on August 16 2024">
-  <p>Taken on August 16, 2024, Location: Cancun, Mexico</p>
-  <button onclick="showAltText('image1')">Show Alt Text</button>
-</div>
-<div class="image-item">
-  <img id="image2" src="Image2.JPG" alt="Arial view from a ferris wheel at CNE that I went to on September 1st, 2024">
-  <p>Taken on September 1, 2024, Location: Toronto, ON</p>
-  <button onclick="showAltText('image2')">Show Alt Text</button>
-</div>
-<div class="image-item">
-  <img id="image3" src="Image3.JPG" alt=" I went to a Raptors game at Scotiabank Arena on October 25, 2024">
-  <p>Taken on October 25, 2024, Location: Toronto, ON</p>
-  <button onclick="showAltText('image3')">Show Alt Text</button>
-
-</div>
-</div>
-
-
-
-
-
+        <script>
+          document.getElementById('nameButton').addEventListener('click', function() {
+            const userName = prompt("Please enter your name:");
+            if (userName) {
+              const greetingMessage = document.getElementById('greetingMessage');
+              greetingMessage.style.display = 'block'; // Show the greeting message
+              greetingMessage.textContent = `Hi ${userName}, welcome to my website!`; // Set the text
+            }
+          });
+        </script>
+      </body>
+      </html>
+      
+      <div class="Animations">
+        
+        <p class="text"> Hi, I am currently a third year BTM student at TMU </p>
+          </div>
+        </div>
+    
+    </body>
 </body>
 </html>
 
