@@ -32,7 +32,7 @@ h3{
 
 body{
     background-color: rgb(216, 218, 218);
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 h4{
@@ -63,6 +63,30 @@ a:visited {
 a:hover {
     background-color: rgb(248, 245, 245);
   }
+
+  h1 {
+    color: #111;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  hr {
+    height: 2px;
+    border: none;
+    background-color: #333;
+    margin: 20px 0; /* Adds spacing around the horizontal rule */
+  }
+  
+  ol, ul1, ul2 {
+    margin: 10px 0 20px 20px; /* Consistent list indentation */
+    padding-left: 20px;
+  }
+  
+  p1 {
+    margin-bottom: 15px; /* Adds space between paragraphs */
+  }
+  
 
   .image-gallery {
     display: inline-block;
@@ -329,12 +353,15 @@ video {
   margin:25px;
 }
 
-
-.Animations{
-  display:inline-block;
-  text-align:center;
-  
+.Animations {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+  margin-top: -120px;
 }
+
+
 
 .text{
 
@@ -342,16 +369,15 @@ video {
   letter-spacing: 4px;
   font-family: cursive;
   border-right: 5px solid;
-  width: 100%;
+  width: auto;
   white-space: nowrap;
-  text-align:center;
   overflow: hidden;
-  animation: 
-  typing 2s steps(18),
+  animation:
+  typing 5s steps(50),
   cursor .4s step-end infinite alternate;
   color:rgb(12, 12, 11);
-  margin-top: -100px;
-  margin-left:0px;
+  margin: 0;
+  margin-left:10px;
 }
 
 
@@ -366,18 +392,20 @@ video {
 
    /* Button Styles */
    #nameButton {
-    font-size: 16px;
-    padding: 20px 130px;
-    background-color: #090909;
+    width: auto;
+    margin-top:-600px;
+    background-color: #0c0c0c;
     color: white;
     border: none;
     cursor: pointer;
-    position:relative;
-    top: -500px;
-    display:inline-block;
+    padding: 10px 20px; /* Adjust padding for size */
+    font-size: 16px; /* Make the text more readable */
+    border-radius: 5px; /* Add rounded corners */
     text-align: center;
     white-space: nowrap;
+    position:absolute;
   }
+  
 
   #nameButton:hover {
     background-color: #bbbbbb;
@@ -403,3 +431,134 @@ video {
     to { width: 100%; }
   }
   
+
+/* Container for the introduction */
+.intro-container {
+  background: linear-gradient(to right,  #000000, #555555); /* Gradient background */
+  padding: 60px 20px; /* Padding around the content */
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+/* Heading styling */
+.intro-heading {
+  font-size: 40px; /* Large font size for the title */
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: typing 3s steps(30) 1s forwards; /* Typing effect */
+}
+
+/* Text styling */
+.intro-text {
+  font-size: 20px;
+  color: #fff;
+  font-style: italic;
+  margin-top: 10px;
+  animation: fadeInText 2s ease-out forwards; /* Smooth text fade-in */
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Fade-in effect for text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade-in effect for text description */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Footer Styles */
+
+.footer {
+  margin-top: auto; /* Push footer to the bottom */
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+.footer-content {
+  max-width: 1200px; /* Limit width for better content alignment */
+  margin: 0 auto; /* Center the content */
+}
+.footer-content p{
+  color:white;
+}
+
+.footer a {
+  color: #f9fbf9; /* Green color for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #090909; /* Change color to white on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+.footer-social {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .footer-social {
+    font-size: 16px;
+  }
+}
+
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .footer-social {
+    font-size: 16px;
+  }
+}
+
+.footer-link i {
+  margin-right: 5px; /* Add space between icon and text */
+}
+
+.footer-link:hover i {
+  color: #fff; /* Change icon color on hover */
+}
