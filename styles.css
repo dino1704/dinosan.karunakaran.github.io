@@ -185,6 +185,7 @@ header {
     background-color: rgb(255, 255, 255);
   }
 
+  /* Dropdown content styling */
   .dropdown {
     position: relative;
   }
@@ -216,6 +217,7 @@ header {
     display: block;
   }
 
+  /* Forms Styling */
   #form-section {
     max-width: 600px;
     margin: 20px auto;
@@ -237,6 +239,7 @@ input, textarea, select, button {
     border-radius: 4px;
 }
 
+/*Adjusting the button style*/
 button {
     width: 30%;
     margin-top: 15px;
@@ -263,6 +266,8 @@ button:active {
 button[type="reset"] {
     background-color: #040404;
 }
+
+/* Image styling */
 
 .image-container {
     display: flex;
@@ -515,14 +520,14 @@ video {
 }
 
 .footer a {
-  color: #f9fbf9; /* Green color for links */
-  text-decoration: none; /* Remove underline */
+  color: #f9fbf9; 
+  text-decoration: none; 
   font-weight: bold;
 }
 
 .footer a:hover {
-  color: #090909; /* Change color to white on hover */
-  text-decoration: underline; /* Underline on hover */
+  color: #090909; 
+  text-decoration: underline; 
 }
 
 .footer-social {
